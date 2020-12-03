@@ -1,0 +1,28 @@
+// For format details, see https://aka.ms/vscode-remote/devcontainer.json or this file's README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.128.0/containers/php-7
+{
+	"name": "manawa",
+	"dockerComposeFile": "../docker-compose.yml",
+	"workspaceFolder": "/Sites/manawa",
+	"service": "aphpache",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": { 
+		"terminal.integrated.shell.linux": "/bin/zsh"
+	},
+
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"felixfbecker.php-debug",
+		"bmewburn.vscode-intelephense-client"
+	],
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "php -v",
+
+	// Uncomment to connect as a non-root user. See https://aka.ms/vscode-remote/con tainers/non-root.
+	//"remoteUser": "vscode"
+}

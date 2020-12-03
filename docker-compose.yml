@@ -1,0 +1,10 @@
+version: "3.0"
+services:
+  aphpache:
+    build: ./docker
+    image: lap:manawa
+    ports:
+     - '80:80'
+     - '443:443'
+    volumes:
+      - .:/Sites/manawa
